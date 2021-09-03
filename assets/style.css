@@ -60,6 +60,9 @@ input,select{
     font-size: 1.3rem;
 
 }
+.answer-ok{
+    background-color: var(--colorPrimaty);
+}
 
 /*Question*/
 .main-question{
@@ -96,4 +99,45 @@ input,select{
 }
 .next-active{
     display: block;
+}
+
+.container-score{
+    background-color: var(--colorSecundary);
+    width: 50%;
+    height: 30vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    /* display: none; */
+}
+.container-score-activo{
+    /* display: block; */
+ visibility:visible;
+}
+.container-score h1{
+    color: var(--colorText);
+}
+.container-score p{
+    color: var(--colorText);
+    font-size: 1.4rem;
+}
+.container-score button{
+    color: var(--colorText);
+    width: 50%;
+    height: 10rem;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: var(--colorPrimaty);
+    font-size: 1.3rem;
+  
+
 }
