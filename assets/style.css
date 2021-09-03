@@ -2,6 +2,7 @@
     --colorPrimaty: #3498DB;
     --colorSecundary:#929597;
     --colorText: #ffff;
+    --hoverButton:#21618C;
     --fuentePrimary: 'Montserrat', sans-serif;
 }
 body{
@@ -177,6 +178,10 @@ input,select{
     width: 100%;
     font-size: 1rem;
     margin-bottom: 0.5rem;
+}
+.question-item:hover{
+    background-color:var(--hoverButton);
+    color: var(--colorText);
 }
 @media(min-width:468px){
     .main-info h1{

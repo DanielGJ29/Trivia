@@ -73,6 +73,7 @@ const renderQuestion = (amount) =>{
             //const btn = mainDiv.querySelectorAll("button");
             Anwer.addEventListener("click", ()=>{
                 Anwer.classList.add("question-item");
+                
                 Anwer.disabled = false;
                 if(incorrect ===correct){
                     score = score + 10;
