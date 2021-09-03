@@ -1,8 +1,13 @@
 :root{
-    --colorPrimaty: #2ECC71;
-    --colorSecundary:#F1C40F;
+    --colorPrimaty: #3498DB;
+    --colorSecundary:#929597;
     --colorText: #ffff;
+    --fuentePrimary: 'Montserrat', sans-serif;
 }
+body{
+    font-family: var(--fuentePrimary);
+}
+
 html {
     box-sizing: border-box;
   }
@@ -14,6 +19,7 @@ html {
     margin: 1rem auto;
     color: var(--colorText);
 }
+/*FORM*/
 .form-main{
     background-color: var(--colorPrimaty);
     width: 100%;
@@ -23,9 +29,10 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-b: 0.5rem;
 }
 .main{
-    background-color: var(--colorSecundary);
+    background-color: rgba(58, 58, 58, 0.2);
     width: 40%;
     height: 90vh;
     border-radius: 2rem;
@@ -40,15 +47,17 @@ html {
 input, label, select,button{
     margin: 0rem auto;
     width: 60%;
+  
 }
 label{
     color: var(--colorText);
     font-size: 1.3rem;
-    margin-top: 2.7rem;
+    margin-top: 2.3rem;
+    margin-bottom: 1rem;
 }
 input,select{
-    height: 2rem;
-    border-radius: 0.2rem;
+    height: 2.2rem;
+    border-radius: 0.4rem;
     font-size: 1rem;
 }
 .btn{
@@ -69,7 +78,8 @@ input,select{
     display: flex;
     flex-direction: column;
     width: 50%;
-    background-color: aqua;
+    /* height: 300px; */
+    /* background-color: var(--colorSecundary); */
     margin: auto;
     align-items: center;
     border-radius: 0.5rem;
@@ -90,7 +100,8 @@ input,select{
 }
 .question-item{
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 .next{
     margin-top: 2rem;
