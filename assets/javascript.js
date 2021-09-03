@@ -47,7 +47,8 @@ const renderQuestion = (amount) =>{
         const container = document.createElement("div");
         container.classList.add("main-info");
         const title = document.createElement("h1");
-        title.innerText = questions[i].question;
+        // title.innerText = questions[i].question;
+        title.innerHTML = `<p class="questionMain">${questions[i].question}</p>`
 
         const divAnwer = document.createElement("div");
         divAnwer.classList.add("answer");
@@ -66,7 +67,8 @@ const renderQuestion = (amount) =>{
             const Anwer = document.createElement("button");
             Anwer.classList.add("btn");
             Anwer.classList.add("question-item");
-            Anwer.innerText = incorrect;
+            // Anwer.innerText = incorrect;
+            Anwer.innerHTML = `${incorrect}`
             divAnwer.appendChild(Anwer);
             //const btn = mainDiv.querySelectorAll("button");
             Anwer.addEventListener("click", ()=>{
